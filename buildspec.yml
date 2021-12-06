@@ -17,8 +17,8 @@ phases:
       - aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/s5o7d0z2
       - docker tag gk-mysql-image public.ecr.aws/s5o7d0z2/gokul-aws-automataion:gk-mysql-image
       - docker tag gk-apache-image public.ecr.aws/s5o7d0z2/gokul-aws-automataion:gk-apache-image
-      - docker push public.ecr.aws/s5o7d0z2/gk-mysql-image
-      - docker push public.ecr.aws/s5o7d0z2/gk-apache-image
+      - docker push public.ecr.aws/s5o7d0z2/gokul-aws-automataion:gk-mysql-image
+      - docker push public.ecr.aws/s5o7d0z2/gokul-aws-automataion:gk-apache-image
 
   build:
     commands:
