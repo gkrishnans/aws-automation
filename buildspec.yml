@@ -1,22 +1,21 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
-      - echo Entered the install phase...
-    finally:
-      - echo This always runs even if the update or install command fails 
   pre_build:
     commands:
-      - echo Entered the pre_build phase...
-    finally:
-      - echo This always runs even if the login command fails 
+      - echo Logging in to Amazon ECR...
+      - $(aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 590852515231.dkr.ecr.us-east-1.amazonaws.com)
+      - $(docker build -t gokul-aws-automataion .)
+      - $(docker tag gokul-aws-automataion:latest 590852515231.dkr.ecr.us-east-1.amazonaws.com/gokul-aws-automataion:latest)
+      - $(docker push 590852515231.dkr.ecr.us-east-1.amazonaws.com/gokul-aws-automataion:latest)
   build:
     commands:
-      - echo Entered the build phase...
-    finally:
-      - echo This always runs even if the install command fails
+      - echo Build started on `date`
+      - echo Building the Docker image...          
+      - ls
   post_build:
     commands:
-      - echo Entered the post_build phase...
       - echo Build completed on `date`
+      - echo Pushing the Docker image...
+
+
