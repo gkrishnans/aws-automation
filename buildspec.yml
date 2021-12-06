@@ -5,17 +5,8 @@ phases:
     commands:
       - echo Logging in to Amazon ECR...
       - echo --------------
-      - ls
-      - cd mysql
-      - docker build -t mysql-image .
-      - cd ..
-      - cd apache
-      - docker build -t apache-image .
 
-      - $(aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 590852515231.dkr.ecr.us-east-1.amazonaws.com)
-      - $(docker build -t gokul-aws-automataion .)
-      - $(docker tag gokul-aws-automataion:latest 590852515231.dkr.ecr.us-east-1.amazonaws.com/gokul-aws-automataion:latest)
-      - $(docker push 590852515231.dkr.ecr.us-east-1.amazonaws.com/gokul-aws-automataion:latest)
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 590852515231.dkr.ecr.us-east-1.amazonaws.com
   build:
     commands:
       - echo Build started on `date`
