@@ -19,12 +19,7 @@ phases:
       - docker tag gk-apache-image public.ecr.aws/s5o7d0z2/gokula-ecr:gk-apache-image
       - docker push public.ecr.aws/s5o7d0z2/gokula-ecr:gk-mysql-image
       - docker push public.ecr.aws/s5o7d0z2/gokula-ecr:gk-apache-image
-      
-  build:
-    commands:
-      - echo Build started on `date`
-      - echo Building the Docker image...          
-      - ls
+
   post_build:
     commands:
       - echo Build completed on `date`
