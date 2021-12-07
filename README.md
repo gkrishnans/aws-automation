@@ -17,3 +17,7 @@ _image successfully pushed to ECR_
 _pipeline stages_
 
 ![image](https://user-images.githubusercontent.com/63493140/144968618-2372ff1f-fdea-4792-a3fe-ad2ae6fab195.png)
+
+_pipeline code triggered after the git commit_
+
+![image](https://user-images.githubusercontent.com/63493140/144969777-1274ea31-bf2d-4710-8831-562e7cfab372.png)
