@@ -1,4 +1,4 @@
-# _To peform the same Task that you have done with Assignment 9 using AWS CodeBuild and CodePipeline. Whenever there is a merge to master branch the pipeline should get triggered automatically and the container should built and stored in ECR_
+_To peform the same Task that you have done with Assignment 9 using AWS CodeBuild and CodePipeline. Whenever there is a merge to master branch the pipeline should get triggered automatically and the container should built and stored in ECR_
 
 # Keynotes
 
