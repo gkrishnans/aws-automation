@@ -1,0 +1,10 @@
+[
+    {
+      "name": "apache",
+      "imageUri": "public.ecr.aws/s5o7d0z2/gokula-ecr:gk-apache-image"
+    },
+    {
+      "name": "mysql",
+      "imageUri": "public.ecr.aws/s5o7d0z2/gokula-ecr:gk-mysql-image"
+    }
+  ]
