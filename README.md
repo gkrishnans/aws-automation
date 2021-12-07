@@ -1,6 +1,6 @@
-# Peform the same Task that you have done with Assignment 9 using AWS CodeBuild and CodePipeline. Whenever there is a merge to master branch the pipeline should get triggered automatically and the container should built and stored in ECR
+# _To peform the same Task that you have done with Assignment 9 using AWS CodeBuild and CodePipeline. Whenever there is a merge to master branch the pipeline should get triggered automatically and the container should built and stored in ECR_
 
-# keynotes
+# Keynotes
 
 _policy:_ Attach policy **AmazonElasticContainerRegistryPublicFullAccess** policy to codebuild-service-role</br>
 
@@ -8,7 +8,7 @@ _adding docker credentials:_
 
 ![image](https://user-images.githubusercontent.com/63493140/144968905-08026e38-e621-438b-adce-79d2da50568a.png)
 
-# outputs
+# Outputs
 
 _image successfully pushed to ECR_
 
